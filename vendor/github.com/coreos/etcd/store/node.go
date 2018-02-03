@@ -41,7 +41,7 @@ type node struct {
 
 	CreatedIndex  uint64
 	ModifiedIndex uint64
-
+	// node
 	Parent *node `json:"-"` // should not encode this field! avoid circular dependency.
 
 	ExpireTime time.Time
